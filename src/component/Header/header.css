@@ -17,6 +17,7 @@ header{
     justify-content: center;
     margin-top: 8rem;
     overflow: hidden; 
+    max-width: var(--max-width);
 }
 .header__container{
     font-family: 'Itim', cursive;

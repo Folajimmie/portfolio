@@ -119,7 +119,7 @@ img{
 
 /* Media Queries for Tablet */
 @media screen and (max-width: 1024px){
-  container{
+  .container{
     width: var(--container-width-medium);
   }
 
@@ -129,7 +129,7 @@ img{
 }
 /* Media Queries for smaller Tablet */
 @media screen and (max-width: 780px){
-  container{
+  .container{
     width: var(--container-width-tab);
   }
 
@@ -139,7 +139,7 @@ img{
 }
 /* Media Queries for Mobile phone */
 @media screen and (max-width: 500px){
-  container{
+  .container{
     width: var(--container-width-small);
   }
 
