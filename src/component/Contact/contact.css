@@ -1,0 +1,115 @@
+.contact{
+    background: var(--color-light);
+    position: relative;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 3rem;
+    
+}
+.contact-content{
+    margin-top: 4rem;
+}
+.contact-img{
+    margin-top: 8rem;
+    padding: 2rem;
+}
+.contact-message form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-message form input{
+    width: 70%;
+    height: 2rem;
+    border-bottom:1px solid var(--color-dark);
+    background: transparent;
+    font-size: 1rem; 
+}
+textarea{
+    width: 70%;
+    background: transparent;
+    resize: none;
+    border: 1px solid var(--color-dark);
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1.1rem;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.socials-contact{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    position: absolute;
+    top: 30%;
+    right: 6rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .contact-container{
+        grid-template-columns: 1fr;
+    }
+    .contact-message{
+        margin-left: 8rem;
+    }
+    .contact-message form input{
+        width: 80%;
+    }
+    textarea{
+        margin-top: 2rem;
+        width: 80%;
+    }
+    .contact-img{
+        margin-top: 0rem;
+        padding: 0;
+    }
+    .socials-contact{
+        display: flex;
+        flex-direction: row;
+        top: 90%;
+        right: 40%;
+    }
+}
+@media screen and (max-width: 780px) {
+    .socials-contact{
+        top: 93%;
+        right: 35%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .contact-message{
+        margin-left: 0rem;
+        margin: 0;
+    }
+    .contact-message form input{
+        width: 100%;
+    }
+    textarea{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .contact-message form{
+        gap: 1rem;
+    }
+    .socials-contact{
+        top: 93%;
+        right: 31%;
+    }
+}
+
+@media screen and (max-width: 379px) {
+    .contact-container{
+        gap: 0;
+        /* display: 100%; */
+    }
+    .contact-content{
+        margin-top: 1rem;
+    }
+    .contact-socials{
+        display: none;
+    }
+}

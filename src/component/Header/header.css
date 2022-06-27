@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+header{
+    background-image: url(../../assets/images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    
+}
+.header{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 8rem;
+    overflow: hidden; 
+}
+.header__container{
+    font-family: 'Itim', cursive;
+    margin-top: 70px;
+    
+}
+.header__container h1{
+    line-height: 3rem;
+}
+.header__container p{
+    margin-top: 1rem;
+}
+
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    
+}
+.me{
+    width: 22rem;
+    height: 25rem;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    border: 3px solid var(--color-primary);
+    overflow: hidden;
+    
+}
+
+/* Media Queries for Tablet */
+@media screen and (max-width: 1024px){
+    header{
+        height: 70vh;
+    }
+    
+    .header__container{
+        margin-top: 190px;
+    }
+    .me{
+        margin-top: 0;
+    }
+    .header-socials{
+        margin-bottom: 5rem;
+    }
+}
+
+/* Media Queries for Mobile */
+@media screen and (max-width: 780px){
+    /* header{
+        height: 100vh;
+    } */
+    /* .header{
+        margin: 0;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        max-width: var(--max-width);
+    } */
+    .header__container{
+        /* width: 100%; */
+        justify-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header-socials{
+        display: flex;
+        gap: 30px;
+        margin-bottom: .1rem;
+        margin-left: 40%;
+    }
+    .me{
+        display: none;
+    }
+    .cta{
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .header__container{
+        width: 100%;
+        justify-items: center;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 140px;
+    }
+    .header__container h1{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .header__container .jimi{
+        font-size: 3rem;
+    }
+    .header-socials{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 0;
+        margin-left: 25%;
+        
+    }
+    .me{
+        display: none;
+    }
+    .cta{
+        justify-content: center;
+    }
+    
+}
+@media screen and (max-width: 379px){
+    .header{
+        margin-top: 3rem; 
+    }
+    .header-socials{
+        display: none;
+    }
+    
+}

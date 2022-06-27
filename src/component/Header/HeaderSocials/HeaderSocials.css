@@ -1,0 +1,15 @@
+.header-socials a{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px; 
+}
+.header-socials a:hover{
+    transform: scale(1.5);
+}
+.header-socials{
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
+}
+
+    
