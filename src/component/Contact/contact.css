@@ -1,6 +1,7 @@
 .contact{
     background: var(--color-light);
     position: relative;
+    height: 100%;
 }
 .contact-container{
     display: grid;
@@ -73,41 +74,53 @@ textarea{
         right: 40%;
     }
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
+    
     .socials-contact{
         top: 93%;
         right: 35%;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 435px) {
     .contact-message{
         margin-left: 0rem;
-        margin: 0;
+        /* margin-top: 1rem; */
     }
+    .contact-container{
+        grid-template-columns: 1fr;
+        gap: 0;
+        margin-bottom: 1rem;
+    }
+    
     .contact-message form input{
-        width: 100%;
+        width: 80%;
     }
     textarea{
-        margin-top: 2rem;
-        width: 100%;
+        margin-top: 1rem;
+        width: 80%;
     }
 
     .contact-message form{
         gap: 1rem;
+        padding-left: 3rem;
     }
     .socials-contact{
+        display: none;
         top: 93%;
         right: 30%;
     }
 }
 
-@media screen and (max-width: 379px) {
+@media screen and (max-width: 375px) {
     .contact-container{
         gap: 0;
         /* display: 100%; */
     }
     .contact-content{
-        margin-top: 1rem;
+        margin-top: 3rem;
+    }
+    .contact-img{
+        margin-top: 0;
     }
     .contact-socials{
         display: none;
